@@ -5,21 +5,15 @@ const New = () => {
     <>
       <h1>New stuff </h1>
       <form action="/logs" method="POST">
-        <div>
-          <label htmlFor="title">Title</label>
-          <input type="text" id="title" name="title" />
-        </div>
-        <div>
-          <label htmlFor="entry">Entry</label>
-          <textarea id="entry" name="entry"></textarea>
-        </div>
-        <div>
-          <input type="checkbox" id="shipIsBroken" name="shipIsBroken" />
-          <label htmlFor="shipIsBroken">Ship is broken</label>
-        </div>
-        <div>
-          <button type="submit">Create Log</button>
-        </div>
+        Title: <input type="text" name="title" />
+        <br />
+        Entry: <textarea name="entry" rows="5" cols="40"></textarea>
+        <br />
+        Ship is broken? <input type="checkbox" name="shipIsBroken" />
+        <br />
+        <button type="submit" value="create task">
+          Submit Homie
+        </button>
       </form>
     </>
   );
