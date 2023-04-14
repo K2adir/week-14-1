@@ -82,7 +82,11 @@ app.get("/logs/:id/edit", (req, res) => {
     }
   });
 });
+//
 
+app.get("*", (req, res) => {
+  res.render("404");
+});
 ///
 
 app.put("/logs/:id", (req, res) => {
